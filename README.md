@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# MyVOD - Plateforme de Streaming
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![image](https://github.com/user-attachments/assets/58fc9935-6704-4abc-bb59-0a8aa30990c6)
 
-## Get started
 
-1. Install dependencies
+MyVOD est une plateforme de streaming vidéo permettant aux utilisateurs de regarder des films en ligne, de gérer leurs abonnements et d'interagir avec du contenu via des commentaires et des évaluations.
 
-   ```bash
+## 🚀 Fonctionnalités
+- 🎥 **Streaming de films et séries**
+- 📅 **Gestion des abonnements**
+- 📝 **Ajout de commentaires et évaluations**
+- 🔍 **Recherche et filtrage des films**
+- 📂 **Stockage des vidéos avec MinIO**
+- 📊 **Tableau de bord administrateur**
+
+## 🛠️ Technologies utilisées
+- **Frontend** : React.js, Redux Toolkit, Axios, Tailwind CSS
+- **Backend** : Node.js, Express.js, MongoDB, JWT
+- **Stockage** : MinIO pour les vidéos
+- **Authentification** : JWT
+- **Docker** : Docker et Docker Compose pour le déploiement
+- **Tests** : Jest/Mocha
+
+## 📦 Installation
+### Prérequis
+- Node.js
+- MongoDB
+- Docker (optionnel pour le déploiement)
+
+### Étapes d'installation
+1. **Cloner le projet**
+   ```sh
+   git clone https://github.com/YassineElmiri/MyVOD.git
+   cd MyVOD
+   ```
+2. **Installer les dépendances**
+   ```sh
+   cd backend-streaming
+   npm install
+   cd ../frontend-streaming
    npm install
    ```
+3. **Configurer les variables d'environnement**
+   - Crée un fichier `.env` dans `backend-streaming` et `frontend-streaming`
+   - Remplis les variables comme indiqué dans `.env.example`
 
-2. Start the app
-
-   ```bash
-    npx expo start
+4. **Lancer le projet**
+   ```sh
+   # Lancer le backend
+   cd backend-streaming
+   npm start
+   
+   # Lancer le frontend
+   cd ../frontend-streaming
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## 🐳 FIGMA
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![image](https://github.com/user-attachments/assets/4f00211a-b098-488c-b0ee-9c41e23ea25b)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## 📜 API Documentation
+L'API est documentée avec Swagger. Accède à la documentation via :
+```
+http://localhost:5000/api-docs
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📩 Contact
+Créé par **Yassine Elmiri** - [miriyassine123@gmail.com](mailto:miriyassine123@gmail.com)
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
